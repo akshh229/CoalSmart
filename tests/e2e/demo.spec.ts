@@ -1,4 +1,80 @@
 import { test, expect } from "@playwright/test";
+test("corrections retain original evidence, history and idempotent imports", async ({
+  request,
+}) => {
+  const baseline = await (await request.get("/api/data")).json();
+  test.skip(!baseline.connected, "Requires shared storage.");
+  const fact = baseline.facts.find(
+    (f: { mineId: string; year: number; metric: string }) =>
+      f.mineId === "m01" && f.year === 2024 && f.metric === "production",
+  );
+  try {
+    const correction = await request.post(`/api/facts/${fact.id}/review`, {
+      data: {
+        expectedVersion: fact.version,
+        action: "correct",
+        value: 4.25,
+        unit: "Mt",
+      },
+    });
+    expect(correction.ok()).toBe(true);
+    const updated = await (await request.get("/api/data")).json();
+    const changed = updated.facts.find((f: { id: string }) => f.id === fact.id);
+    expect(changed.value).toBe(4.25);
+    expect(changed.originalValue).toBe(fact.originalValue);
+    expect(changed.evidenceId).toBe(fact.evidenceId);
+    const event = updated.events.findLast(
+      (e: { recordId: string; action: string }) =>
+        e.recordId === fact.id && e.action === "correct",
+    );
+    expect(event.before.value).toBe(fact.value);
+    expect(event.after.value).toBe(4.25);
+    expect(
+      (
+        await request.post(`/api/facts/${fact.id}/review`, {
+          data: { expectedVersion: fact.version, action: "approve" },
+        })
+      ).status(),
+    ).toBe(409);
+    expect((await request.post("/api/demo/import", { data: {} })).ok()).toBe(
+      true,
+    );
+    const imported = await (await request.get("/api/data")).json();
+    expect(imported.facts).toHaveLength(baseline.facts.length);
+    expect(
+      imported.facts.find((f: { id: string }) => f.id === fact.id).value,
+    ).toBe(4.25);
+  } finally {
+    const current = await (await request.get("/api/data")).json();
+    expect(
+      (
+        await request.post("/api/demo/reset", {
+          data: {
+            expectedRevision: current.revision,
+            confirm: "RESET SHARED DEMO",
+          },
+        })
+      ).ok(),
+    ).toBe(true);
+  }
+});
+test("API refresh errors are visible and retryable", async ({ page }) => {
+  await page.goto("/");
+  await page.route("**/api/data", (route) =>
+    route.fulfill({
+      status: 503,
+      contentType: "application/json",
+      body: JSON.stringify({ error: "Unavailable" }),
+    }),
+  );
+  await page.getByRole("button", { name: "Refresh shared data" }).click();
+  await expect(page.getByText("Could not refresh shared data.")).toBeVisible();
+  await page.unroute("**/api/data");
+  await page.getByRole("button", { name: "Refresh shared data" }).click();
+  await expect(
+    page.getByRole("heading", { name: "Mine intelligence, connected." }),
+  ).toBeVisible();
+});
 test("invalid API requests fail safely", async ({ request }) => {
   expect(
     (
