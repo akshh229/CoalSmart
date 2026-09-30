@@ -1,0 +1,929 @@
+{
+  "description": "Synthetic ground truth. Facts cite matching source pages or workbook cells.",
+  "facts": [
+    {
+      "id": "f-d01-2020-production",
+      "mineId": "m01",
+      "year": 2020,
+      "metric": "production",
+      "value": 5.3,
+      "unit": "Mt",
+      "evidenceId": "d01-2020-production"
+    },
+    {
+      "id": "f-d01-2020-reserves",
+      "mineId": "m01",
+      "year": 2020,
+      "metric": "reserves",
+      "value": 135,
+      "unit": "Mt",
+      "evidenceId": "d01-2020-reserves"
+    },
+    {
+      "id": "f-d01-2020-overburden",
+      "mineId": "m01",
+      "year": 2020,
+      "metric": "overburden",
+      "value": 12,
+      "unit": "Mm³",
+      "evidenceId": "d01-2020-overburden"
+    },
+    {
+      "id": "f-d01-2020-target",
+      "mineId": "m01",
+      "year": 2020,
+      "metric": "target",
+      "value": 5.8,
+      "unit": "Mt",
+      "evidenceId": "d01-2020-target"
+    },
+    {
+      "id": "f-d01-2021-production",
+      "mineId": "m01",
+      "year": 2021,
+      "metric": "production",
+      "value": 5,
+      "unit": "Mt",
+      "evidenceId": "d01-2021-production"
+    },
+    {
+      "id": "f-d01-2021-reserves",
+      "mineId": "m01",
+      "year": 2021,
+      "metric": "reserves",
+      "value": 130.5,
+      "unit": "Mt",
+      "evidenceId": "d01-2021-reserves"
+    },
+    {
+      "id": "f-d01-2021-overburden",
+      "mineId": "m01",
+      "year": 2021,
+      "metric": "overburden",
+      "value": 12.8,
+      "unit": "Mm³",
+      "evidenceId": "d01-2021-overburden"
+    },
+    {
+      "id": "f-d01-2021-target",
+      "mineId": "m01",
+      "year": 2021,
+      "metric": "target",
+      "value": 5.5,
+      "unit": "Mt",
+      "evidenceId": "d01-2021-target"
+    },
+    {
+      "id": "f-d02-2022-production",
+      "mineId": "m01",
+      "year": 2022,
+      "metric": "production",
+      "value": 4.7,
+      "unit": "Mt",
+      "evidenceId": "d02-2022-production"
+    },
+    {
+      "id": "f-d02-2022-reserves",
+      "mineId": "m01",
+      "year": 2022,
+      "metric": "reserves",
+      "value": 126,
+      "unit": "Mt",
+      "evidenceId": "d02-2022-reserves"
+    },
+    {
+      "id": "f-d02-2022-overburden",
+      "mineId": "m01",
+      "year": 2022,
+      "metric": "overburden",
+      "value": 13.6,
+      "unit": "Mm³",
+      "evidenceId": "d02-2022-overburden"
+    },
+    {
+      "id": "f-d02-2022-target",
+      "mineId": "m01",
+      "year": 2022,
+      "metric": "target",
+      "value": 5.2,
+      "unit": "Mt",
+      "evidenceId": "d02-2022-target"
+    },
+    {
+      "id": "f-d03-2023-production",
+      "mineId": "m01",
+      "year": 2023,
+      "metric": "production",
+      "value": 4.5,
+      "unit": "Mt",
+      "evidenceId": "d03-2023-production"
+    },
+    {
+      "id": "f-d03-2023-reserves",
+      "mineId": "m01",
+      "year": 2023,
+      "metric": "reserves",
+      "value": 121.5,
+      "unit": "Mt",
+      "evidenceId": "d03-2023-reserves"
+    },
+    {
+      "id": "f-d03-2023-overburden",
+      "mineId": "m01",
+      "year": 2023,
+      "metric": "overburden",
+      "value": 14.4,
+      "unit": "Mm³",
+      "evidenceId": "d03-2023-overburden"
+    },
+    {
+      "id": "f-d03-2023-target",
+      "mineId": "m01",
+      "year": 2023,
+      "metric": "target",
+      "value": 5,
+      "unit": "Mt",
+      "evidenceId": "d03-2023-target"
+    },
+    {
+      "id": "f-d03-revised",
+      "mineId": "m01",
+      "year": 2022,
+      "metric": "reserves",
+      "value": 142,
+      "unit": "Mt",
+      "evidenceId": "d03-revised"
+    },
+    {
+      "id": "f-d04-2024-production",
+      "mineId": "m01",
+      "year": 2024,
+      "metric": "production",
+      "value": 4,
+      "unit": "Mt",
+      "evidenceId": "d04-2024-production"
+    },
+    {
+      "id": "f-d04-2024-reserves",
+      "mineId": "m01",
+      "year": 2024,
+      "metric": "reserves",
+      "value": 117,
+      "unit": "Mt",
+      "evidenceId": "d04-2024-reserves"
+    },
+    {
+      "id": "f-d04-2024-overburden",
+      "mineId": "m01",
+      "year": 2024,
+      "metric": "overburden",
+      "value": 15.2,
+      "unit": "Mm³",
+      "evidenceId": "d04-2024-overburden"
+    },
+    {
+      "id": "f-d04-2024-target",
+      "mineId": "m01",
+      "year": 2024,
+      "metric": "target",
+      "value": 4.5,
+      "unit": "Mt",
+      "evidenceId": "d04-2024-target"
+    },
+    {
+      "id": "f-d05-2020-production",
+      "mineId": "m02",
+      "year": 2020,
+      "metric": "production",
+      "value": 3.1,
+      "unit": "Mt",
+      "evidenceId": "d05-2020-production"
+    },
+    {
+      "id": "f-d05-2020-reserves",
+      "mineId": "m02",
+      "year": 2020,
+      "metric": "reserves",
+      "value": 166,
+      "unit": "Mt",
+      "evidenceId": "d05-2020-reserves"
+    },
+    {
+      "id": "f-d05-2020-overburden",
+      "mineId": "m02",
+      "year": 2020,
+      "metric": "overburden",
+      "value": 14,
+      "unit": "Mm³",
+      "evidenceId": "d05-2020-overburden"
+    },
+    {
+      "id": "f-d05-2020-target",
+      "mineId": "m02",
+      "year": 2020,
+      "metric": "target",
+      "value": 3.6,
+      "unit": "Mt",
+      "evidenceId": "d05-2020-target"
+    },
+    {
+      "id": "f-d05-2021-production",
+      "mineId": "m02",
+      "year": 2021,
+      "metric": "production",
+      "value": 3.3,
+      "unit": "Mt",
+      "evidenceId": "d05-2021-production"
+    },
+    {
+      "id": "f-d05-2021-reserves",
+      "mineId": "m02",
+      "year": 2021,
+      "metric": "reserves",
+      "value": 162.8,
+      "unit": "Mt",
+      "evidenceId": "d05-2021-reserves"
+    },
+    {
+      "id": "f-d05-2021-overburden",
+      "mineId": "m02",
+      "year": 2021,
+      "metric": "overburden",
+      "value": 14.8,
+      "unit": "Mm³",
+      "evidenceId": "d05-2021-overburden"
+    },
+    {
+      "id": "f-d05-2021-target",
+      "mineId": "m02",
+      "year": 2021,
+      "metric": "target",
+      "value": 3.8,
+      "unit": "Mt",
+      "evidenceId": "d05-2021-target"
+    },
+    {
+      "id": "f-d06-2022-reserves",
+      "mineId": "m02",
+      "year": 2022,
+      "metric": "reserves",
+      "value": 159.6,
+      "unit": "Mt",
+      "evidenceId": "d06-2022-reserves"
+    },
+    {
+      "id": "f-d06-2022-overburden",
+      "mineId": "m02",
+      "year": 2022,
+      "metric": "overburden",
+      "value": 15.6,
+      "unit": "Mm³",
+      "evidenceId": "d06-2022-overburden"
+    },
+    {
+      "id": "f-d06-2022-target",
+      "mineId": "m02",
+      "year": 2022,
+      "metric": "target",
+      "value": 3.9,
+      "unit": "Mt",
+      "evidenceId": "d06-2022-target"
+    },
+    {
+      "id": "f-d07-2023-production",
+      "mineId": "m02",
+      "year": 2023,
+      "metric": "production",
+      "value": 3.2,
+      "unit": "Mt",
+      "evidenceId": "d07-2023-production"
+    },
+    {
+      "id": "f-d07-2023-reserves",
+      "mineId": "m02",
+      "year": 2023,
+      "metric": "reserves",
+      "value": 156.4,
+      "unit": "Mt",
+      "evidenceId": "d07-2023-reserves"
+    },
+    {
+      "id": "f-d07-2023-overburden",
+      "mineId": "m02",
+      "year": 2023,
+      "metric": "overburden",
+      "value": 16.4,
+      "unit": "Mm³",
+      "evidenceId": "d07-2023-overburden"
+    },
+    {
+      "id": "f-d07-2023-target",
+      "mineId": "m02",
+      "year": 2023,
+      "metric": "target",
+      "value": 3.7,
+      "unit": "Mt",
+      "evidenceId": "d07-2023-target"
+    },
+    {
+      "id": "f-d08-2024-production",
+      "mineId": "m02",
+      "year": 2024,
+      "metric": "production",
+      "value": 3.6,
+      "unit": "Mt",
+      "evidenceId": "d08-2024-production"
+    },
+    {
+      "id": "f-d08-2024-reserves",
+      "mineId": "m02",
+      "year": 2024,
+      "metric": "reserves",
+      "value": 153.2,
+      "unit": "Mt",
+      "evidenceId": "d08-2024-reserves"
+    },
+    {
+      "id": "f-d08-2024-overburden",
+      "mineId": "m02",
+      "year": 2024,
+      "metric": "overburden",
+      "value": 17.2,
+      "unit": "Mm³",
+      "evidenceId": "d08-2024-overburden"
+    },
+    {
+      "id": "f-d08-2024-target",
+      "mineId": "m02",
+      "year": 2024,
+      "metric": "target",
+      "value": 4.1,
+      "unit": "Mt",
+      "evidenceId": "d08-2024-target"
+    },
+    {
+      "id": "f-d08-revised",
+      "mineId": "m02",
+      "year": 2023,
+      "metric": "production",
+      "value": 3.48,
+      "unit": "Mt",
+      "evidenceId": "d08-revised"
+    },
+    {
+      "id": "f-d09-2020-production",
+      "mineId": "m03",
+      "year": 2020,
+      "metric": "production",
+      "value": 6.2,
+      "unit": "Mt",
+      "evidenceId": "d09-2020-production"
+    },
+    {
+      "id": "f-d09-2020-reserves",
+      "mineId": "m03",
+      "year": 2020,
+      "metric": "reserves",
+      "value": 197,
+      "unit": "Mt",
+      "evidenceId": "d09-2020-reserves"
+    },
+    {
+      "id": "f-d09-2020-overburden",
+      "mineId": "m03",
+      "year": 2020,
+      "metric": "overburden",
+      "value": 16,
+      "unit": "Mm³",
+      "evidenceId": "d09-2020-overburden"
+    },
+    {
+      "id": "f-d09-2020-target",
+      "mineId": "m03",
+      "year": 2020,
+      "metric": "target",
+      "value": 6.7,
+      "unit": "Mt",
+      "evidenceId": "d09-2020-target"
+    },
+    {
+      "id": "f-d09-2021-production",
+      "mineId": "m03",
+      "year": 2021,
+      "metric": "production",
+      "value": 6.6,
+      "unit": "Mt",
+      "evidenceId": "d09-2021-production"
+    },
+    {
+      "id": "f-d09-2021-reserves",
+      "mineId": "m03",
+      "year": 2021,
+      "metric": "reserves",
+      "value": 193.8,
+      "unit": "Mt",
+      "evidenceId": "d09-2021-reserves"
+    },
+    {
+      "id": "f-d09-2021-overburden",
+      "mineId": "m03",
+      "year": 2021,
+      "metric": "overburden",
+      "value": 16.8,
+      "unit": "Mm³",
+      "evidenceId": "d09-2021-overburden"
+    },
+    {
+      "id": "f-d09-2021-target",
+      "mineId": "m03",
+      "year": 2021,
+      "metric": "target",
+      "value": 7.1,
+      "unit": "Mt",
+      "evidenceId": "d09-2021-target"
+    },
+    {
+      "id": "f-d10-2022-production",
+      "mineId": "m03",
+      "year": 2022,
+      "metric": "production",
+      "value": 7.1,
+      "unit": "Mt",
+      "evidenceId": "d10-2022-production"
+    },
+    {
+      "id": "f-d10-2022-reserves",
+      "mineId": "m03",
+      "year": 2022,
+      "metric": "reserves",
+      "value": 190.6,
+      "unit": "Mt",
+      "evidenceId": "d10-2022-reserves"
+    },
+    {
+      "id": "f-d10-2022-overburden",
+      "mineId": "m03",
+      "year": 2022,
+      "metric": "overburden",
+      "value": 17.6,
+      "unit": "Mm³",
+      "evidenceId": "d10-2022-overburden"
+    },
+    {
+      "id": "f-d10-2022-target",
+      "mineId": "m03",
+      "year": 2022,
+      "metric": "target",
+      "value": 7.6,
+      "unit": "Mt",
+      "evidenceId": "d10-2022-target"
+    },
+    {
+      "id": "f-d11-2023-production",
+      "mineId": "m03",
+      "year": 2023,
+      "metric": "production",
+      "value": 7.5,
+      "unit": "Mt",
+      "evidenceId": "d11-2023-production"
+    },
+    {
+      "id": "f-d11-2023-reserves",
+      "mineId": "m03",
+      "year": 2023,
+      "metric": "reserves",
+      "value": 187.4,
+      "unit": "Mt",
+      "evidenceId": "d11-2023-reserves"
+    },
+    {
+      "id": "f-d11-2023-overburden",
+      "mineId": "m03",
+      "year": 2023,
+      "metric": "overburden",
+      "value": 18.4,
+      "unit": "Mm³",
+      "evidenceId": "d11-2023-overburden"
+    },
+    {
+      "id": "f-d11-2023-target",
+      "mineId": "m03",
+      "year": 2023,
+      "metric": "target",
+      "value": 8,
+      "unit": "Mt",
+      "evidenceId": "d11-2023-target"
+    },
+    {
+      "id": "f-d12-2024-production",
+      "mineId": "m03",
+      "year": 2024,
+      "metric": "production",
+      "value": 8.1,
+      "unit": "Mt",
+      "evidenceId": "d12-2024-production"
+    },
+    {
+      "id": "f-d12-2024-reserves",
+      "mineId": "m03",
+      "year": 2024,
+      "metric": "reserves",
+      "value": 184.2,
+      "unit": "Mt",
+      "evidenceId": "d12-2024-reserves"
+    },
+    {
+      "id": "f-d12-2024-overburden",
+      "mineId": "m03",
+      "year": 2024,
+      "metric": "overburden",
+      "value": 19.2,
+      "unit": "Mm³",
+      "evidenceId": "d12-2024-overburden"
+    },
+    {
+      "id": "f-d12-2024-target",
+      "mineId": "m03",
+      "year": 2024,
+      "metric": "target",
+      "value": 8.6,
+      "unit": "Mt",
+      "evidenceId": "d12-2024-target"
+    },
+    {
+      "id": "f-d13-2020-production",
+      "mineId": "m04",
+      "year": 2020,
+      "metric": "production",
+      "value": 2.4,
+      "unit": "Mt",
+      "evidenceId": "d13-2020-production"
+    },
+    {
+      "id": "f-d13-2020-reserves",
+      "mineId": "m04",
+      "year": 2020,
+      "metric": "reserves",
+      "value": 228,
+      "unit": "Mt",
+      "evidenceId": "d13-2020-reserves"
+    },
+    {
+      "id": "f-d13-2020-overburden",
+      "mineId": "m04",
+      "year": 2020,
+      "metric": "overburden",
+      "value": 18,
+      "unit": "Mm³",
+      "evidenceId": "d13-2020-overburden"
+    },
+    {
+      "id": "f-d13-2020-target",
+      "mineId": "m04",
+      "year": 2020,
+      "metric": "target",
+      "value": 2.9,
+      "unit": "Mt",
+      "evidenceId": "d13-2020-target"
+    },
+    {
+      "id": "f-d13-2021-production",
+      "mineId": "m04",
+      "year": 2021,
+      "metric": "production",
+      "value": 2.3,
+      "unit": "Mt",
+      "evidenceId": "d13-2021-production"
+    },
+    {
+      "id": "f-d13-2021-reserves",
+      "mineId": "m04",
+      "year": 2021,
+      "metric": "reserves",
+      "value": 224.8,
+      "unit": "Mt",
+      "evidenceId": "d13-2021-reserves"
+    },
+    {
+      "id": "f-d13-2021-overburden",
+      "mineId": "m04",
+      "year": 2021,
+      "metric": "overburden",
+      "value": 18.8,
+      "unit": "Mm³",
+      "evidenceId": "d13-2021-overburden"
+    },
+    {
+      "id": "f-d13-2021-target",
+      "mineId": "m04",
+      "year": 2021,
+      "metric": "target",
+      "value": 2.8,
+      "unit": "Mt",
+      "evidenceId": "d13-2021-target"
+    },
+    {
+      "id": "f-d14-2022-production",
+      "mineId": "m04",
+      "year": 2022,
+      "metric": "production",
+      "value": 2.1,
+      "unit": "Mt",
+      "evidenceId": "d14-2022-production"
+    },
+    {
+      "id": "f-d14-2022-reserves",
+      "mineId": "m04",
+      "year": 2022,
+      "metric": "reserves",
+      "value": 221.6,
+      "unit": "Mt",
+      "evidenceId": "d14-2022-reserves"
+    },
+    {
+      "id": "f-d14-2022-overburden",
+      "mineId": "m04",
+      "year": 2022,
+      "metric": "overburden",
+      "value": 19.6,
+      "unit": "Mm³",
+      "evidenceId": "d14-2022-overburden"
+    },
+    {
+      "id": "f-d14-2022-target",
+      "mineId": "m04",
+      "year": 2022,
+      "metric": "target",
+      "value": 2.6,
+      "unit": "Mt",
+      "evidenceId": "d14-2022-target"
+    },
+    {
+      "id": "f-d15-2023-production",
+      "mineId": "m04",
+      "year": 2023,
+      "metric": "production",
+      "value": 2,
+      "unit": "Mt",
+      "evidenceId": "d15-2023-production"
+    },
+    {
+      "id": "f-d15-2023-reserves",
+      "mineId": "m04",
+      "year": 2023,
+      "metric": "reserves",
+      "value": 218.4,
+      "unit": "Mt",
+      "evidenceId": "d15-2023-reserves"
+    },
+    {
+      "id": "f-d15-2023-overburden",
+      "mineId": "m04",
+      "year": 2023,
+      "metric": "overburden",
+      "value": 20.4,
+      "unit": "Mm³",
+      "evidenceId": "d15-2023-overburden"
+    },
+    {
+      "id": "f-d15-2023-target",
+      "mineId": "m04",
+      "year": 2023,
+      "metric": "target",
+      "value": 2.5,
+      "unit": "Mt",
+      "evidenceId": "d15-2023-target"
+    },
+    {
+      "id": "f-d15-revised",
+      "mineId": "m04",
+      "year": 2022,
+      "metric": "reserves",
+      "value": 198,
+      "unit": "Mt",
+      "evidenceId": "d15-revised"
+    },
+    {
+      "id": "f-d16-2024-production",
+      "mineId": "m04",
+      "year": 2024,
+      "metric": "production",
+      "value": 1.85,
+      "unit": "Mt",
+      "evidenceId": "d16-2024-production"
+    },
+    {
+      "id": "f-d16-2024-reserves",
+      "mineId": "m04",
+      "year": 2024,
+      "metric": "reserves",
+      "value": 215.2,
+      "unit": "Mt",
+      "evidenceId": "d16-2024-reserves"
+    },
+    {
+      "id": "f-d16-2024-overburden",
+      "mineId": "m04",
+      "year": 2024,
+      "metric": "overburden",
+      "value": 21.2,
+      "unit": "Mm³",
+      "evidenceId": "d16-2024-overburden"
+    },
+    {
+      "id": "f-d16-2024-target",
+      "mineId": "m04",
+      "year": 2024,
+      "metric": "target",
+      "value": 2.35,
+      "unit": "Mt",
+      "evidenceId": "d16-2024-target"
+    },
+    {
+      "id": "f-d17-2020-production",
+      "mineId": "m05",
+      "year": 2020,
+      "metric": "production",
+      "value": 4.1,
+      "unit": "Mt",
+      "evidenceId": "d17-2020-production"
+    },
+    {
+      "id": "f-d17-2020-reserves",
+      "mineId": "m05",
+      "year": 2020,
+      "metric": "reserves",
+      "value": 259,
+      "unit": "Mt",
+      "evidenceId": "d17-2020-reserves"
+    },
+    {
+      "id": "f-d17-2020-overburden",
+      "mineId": "m05",
+      "year": 2020,
+      "metric": "overburden",
+      "value": 20,
+      "unit": "Mm³",
+      "evidenceId": "d17-2020-overburden"
+    },
+    {
+      "id": "f-d17-2020-target",
+      "mineId": "m05",
+      "year": 2020,
+      "metric": "target",
+      "value": 4.6,
+      "unit": "Mt",
+      "evidenceId": "d17-2020-target"
+    },
+    {
+      "id": "f-d17-2021-production",
+      "mineId": "m05",
+      "year": 2021,
+      "metric": "production",
+      "value": 4.4,
+      "unit": "Mt",
+      "evidenceId": "d17-2021-production"
+    },
+    {
+      "id": "f-d17-2021-reserves",
+      "mineId": "m05",
+      "year": 2021,
+      "metric": "reserves",
+      "value": 255.8,
+      "unit": "Mt",
+      "evidenceId": "d17-2021-reserves"
+    },
+    {
+      "id": "f-d17-2021-overburden",
+      "mineId": "m05",
+      "year": 2021,
+      "metric": "overburden",
+      "value": 20.8,
+      "unit": "Mm³",
+      "evidenceId": "d17-2021-overburden"
+    },
+    {
+      "id": "f-d17-2021-target",
+      "mineId": "m05",
+      "year": 2021,
+      "metric": "target",
+      "value": 4.9,
+      "unit": "Mt",
+      "evidenceId": "d17-2021-target"
+    },
+    {
+      "id": "f-d18-2022-production",
+      "mineId": "m05",
+      "year": 2022,
+      "metric": "production",
+      "value": 4.8,
+      "unit": "Mt",
+      "evidenceId": "d18-2022-production"
+    },
+    {
+      "id": "f-d18-2022-reserves",
+      "mineId": "m05",
+      "year": 2022,
+      "metric": "reserves",
+      "value": 252.6,
+      "unit": "Mt",
+      "evidenceId": "d18-2022-reserves"
+    },
+    {
+      "id": "f-d18-2022-overburden",
+      "mineId": "m05",
+      "year": 2022,
+      "metric": "overburden",
+      "value": 21.6,
+      "unit": "Mm³",
+      "evidenceId": "d18-2022-overburden"
+    },
+    {
+      "id": "f-d18-2022-target",
+      "mineId": "m05",
+      "year": 2022,
+      "metric": "target",
+      "value": 5.3,
+      "unit": "Mt",
+      "evidenceId": "d18-2022-target"
+    },
+    {
+      "id": "f-d19-2023-production",
+      "mineId": "m05",
+      "year": 2023,
+      "metric": "production",
+      "value": 5,
+      "unit": "Mt",
+      "evidenceId": "d19-2023-production"
+    },
+    {
+      "id": "f-d19-2023-reserves",
+      "mineId": "m05",
+      "year": 2023,
+      "metric": "reserves",
+      "value": 249.4,
+      "unit": "Mt",
+      "evidenceId": "d19-2023-reserves"
+    },
+    {
+      "id": "f-d19-2023-overburden",
+      "mineId": "m05",
+      "year": 2023,
+      "metric": "overburden",
+      "value": 22.4,
+      "unit": "Mm³",
+      "evidenceId": "d19-2023-overburden"
+    },
+    {
+      "id": "f-d19-2023-target",
+      "mineId": "m05",
+      "year": 2023,
+      "metric": "target",
+      "value": 5.5,
+      "unit": "Mt",
+      "evidenceId": "d19-2023-target"
+    },
+    {
+      "id": "f-d20-2024-production",
+      "mineId": "m05",
+      "year": 2024,
+      "metric": "production",
+      "value": 5.4,
+      "unit": "Mt",
+      "evidenceId": "d20-2024-production"
+    },
+    {
+      "id": "f-d20-2024-reserves",
+      "mineId": "m05",
+      "year": 2024,
+      "metric": "reserves",
+      "value": 246.2,
+      "unit": "Mt",
+      "evidenceId": "d20-2024-reserves"
+    },
+    {
+      "id": "f-d20-2024-overburden",
+      "mineId": "m05",
+      "year": 2024,
+      "metric": "overburden",
+      "value": 23.2,
+      "unit": "Mm³",
+      "evidenceId": "d20-2024-overburden"
+    },
+    {
+      "id": "f-d20-2024-target",
+      "mineId": "m05",
+      "year": 2024,
+      "metric": "target",
+      "value": 5.9,
+      "unit": "Mt",
+      "evidenceId": "d20-2024-target"
+    }
+  ],
+  "conflicts": [
+    "m01:2022:reserves:recoverable",
+    "m02:2023:production:annual",
+    "m04:2022:reserves:recoverable"
+  ],
+  "heroProductionChange": -24.53
+}
