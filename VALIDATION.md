@@ -1,12 +1,31 @@
-# Prototype validation
+# Verification
 
-Local validation completed on 30 September 2026:
+Checked on 9 October 2026.
 
-- TypeScript checking, ESLint, production Next.js build and GitHub Actions checks pass.
-- 27 unit/database tests cover normalization, comparable conflict categories, selected facts, missing years, zero baselines, original values, revisions, concurrent updates, reset, report staleness and atomic rate budgets.
-- Browser checks exercise all eight pages, exact source previews, shared conflict resolution in two browser contexts, concurrent-edit rejection, live question answering, report generation/approval, mobile keyboard navigation, failed map tiles and invalid API requests.
-- Live Gemini evaluation passes numerical, descriptive, combined, missing-evidence and conflicting-data questions. Baseline Aaranya production changes from 5.30 Mt to 4.00 Mt across 2020–2024 (−24.53%). Unresolved 2022 recoverable reserves remain 126.00 / 142.00 Mt.
-- All twenty source files and thirty-nine exact page/cell previews were generated and visually inspected. Prepared extraction is labeled throughout. No extraction-accuracy claim is made.
-- Supabase migrations, idempotent sample seed and twenty Gemini chunk embeddings are applied. The app uses Gemini 3.5 Flash-Lite after validating account/model access. Credentials remain outside Git.
+## Application
 
-GitHub confirms that the initial implementation was deployed automatically by the existing Vercel project in `akshh229s-projects` (commit `4ce5058`). The deployment URL redirects unauthenticated visitors to Vercel sign-in, while the supplied `https://coalsmart.vercel.app/` still returns HTTP 404. The separately signed-in `gargujjwal136-gmailcoms-projects` workspace cannot configure that owner's project. Production domain, server environment and live latency verification remain pending access to the existing project. Do not interpret deployment build success as a verified public production workflow.
+Type checking, linting and the production build pass. All 24 core tests pass, covering unit conversion, conflict detection, fact selection, missing years, trends, correction history and report staleness.
+
+Five browser checks pass on the public deployment. These cover navigation, source previews, request validation, map tile failures, refresh errors and mobile keyboard navigation. All twenty document downloads and thirty-nine source previews return HTTP 200.
+
+## Supabase
+
+The database is reachable and authenticated queries succeed. All three integration tests pass:
+
+- The sample dataset persists and outdated commits are rejected.
+- Structured facts and evidence records stay in sync.
+- Per-IP and global AI budgets are enforced atomically.
+
+Verified records: **5 mines, 20 documents, 102 facts and 20 Gemini embeddings**.
+
+## Live AI
+
+The configured local Gemini key successfully completes structured generation and returns embeddings with 1,536 dimensions.
+
+The complete workflow was also tested on 30 September 2026: shared reviews in two browser sessions, conflict resolution, live questions, report generation and demo approval. Five question evaluations passed against the sample ground truth. Those earlier results are separate from the current service connectivity checks.
+
+## Hosted configuration
+
+The public site is available at https://coalsmart.vercel.app/ and automatic Vercel deployment succeeds. Its latest API check reports that Supabase and AI environment variables have not been configured in the production project. The hosted workspace serves read-only sample data until those variables are added and the project is redeployed.
+
+Database connectivity is verified for the local configuration. Shared production reviews, live production answers and production report latency require verification after deployment configuration is complete.
