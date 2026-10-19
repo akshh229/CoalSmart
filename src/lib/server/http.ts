@@ -4,6 +4,7 @@ import { cookies } from "next/headers";
 import { randomUUID } from "node:crypto";
 import { ZodError } from "zod";
 import { AppError } from "../review";
+export { assertOrigin } from "../request-origin";
 export async function sessionId() {
   const jar = await cookies();
   const existing = jar.get("coalsmart-session")?.value;
@@ -17,11 +18,6 @@ export async function sessionId() {
     maxAge: 86400 * 30,
   });
   return id;
-}
-export function assertOrigin(request: Request) {
-  const origin = request.headers.get("origin");
-  if (origin && origin !== new URL(request.url).origin)
-    throw new AppError("Cross-origin changes are not allowed.", 403);
 }
 export async function boundedJson(request: Request): Promise<unknown> {
   const reader = request.body?.getReader();

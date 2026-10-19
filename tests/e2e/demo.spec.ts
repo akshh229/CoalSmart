@@ -75,7 +75,15 @@ test("API refresh errors are visible and retryable", async ({ page }) => {
     page.getByRole("heading", { name: "Mine intelligence, connected." }),
   ).toBeVisible();
 });
-test("invalid API requests fail safely", async ({ request }) => {
+test("invalid API requests fail safely", async ({ request, baseURL }) => {
+  expect(
+    (
+      await request.post("/api/questions", {
+        headers: { Origin: new URL(baseURL!).origin },
+        data: { mineId: "m01", question: "x" },
+      })
+    ).status(),
+  ).toBe(400);
   expect(
     (
       await request.post("/api/questions", {
